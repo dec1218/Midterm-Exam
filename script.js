@@ -7,6 +7,6 @@ const products = [
   function alertProductDetails(productId) {
     const product = products.find(p => p.id === productId);
     if (product) {
-      alert(Product: ${products.name}\nPrice: $${products.price}\nIn Stock: ${products.stock});
+      alert(Product: ${product.name}\nPrice: $${product.price}\nIn Stock: ${product.stock});
     }
   }
