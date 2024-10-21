@@ -7,9 +7,9 @@ const products = [
 function addToCart(productId) {
   const product = products.find(p => p.id === productId);
   if (product && product.stock > 0) {
-    product.stock--; // Decrease stock by 1
-    displayNotification(${product.name} added to cart successfully.); // Show notification
-    // Update stock display
+    product.stock--; 
+    displayNotification(${product.name} added to cart successfully.); 
+   
     document.getElementById(stock${productId}).textContent = In Stock: ${product.stock};
   } else {
     alert(Sorry, ${product ? product.name : 'this product'} is out of stock.);
@@ -19,8 +19,8 @@ function addToCart(productId) {
 function displayNotification(message) {
   const notification = document.getElementById('notification');
   notification.textContent = message;
-  notification.classList.remove('d-none'); // Show notification
+  notification.classList.remove('d-none'); 
   setTimeout(() => {
-    notification.classList.add('d-none'); // Hide notification after 3 seconds
+    notification.classList.add('d-none'); 
   }, 3000);
 }
