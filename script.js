@@ -9,4 +9,4 @@ const products = [
     if (product) {
       alert(Product: ${product.name}\nPrice: $${product.price}\nIn Stock: ${product.stock});
     }
-  }
+}
