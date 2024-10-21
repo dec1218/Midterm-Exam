@@ -7,17 +7,18 @@
   <title>E-commerce</title>
 </head>
 <body>
-  <div class="container mt-5">
+  <div class="container mt-2">
     <h1 class="text-center mb-4">E-commerce Dashboard</h1>
+    <div id="notification" class="alert alert-success d-none" role="alert"></div>
     <div class="row">
         <div class="col-md-4 mb-3">
             <div class="card">
-              <img src="https://static-ecapac.acer.com/media/catalog/product/a/s/aspire_5_15_-_nx.khjsa.006_nx.khjsa.006.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=500&width=500&canvas=500:500" class="card-img-top" alt="Product Image">
+              <img src="https://d1rlzxa98cyc61.cloudfront.net/catalog/product/1/9/190638_2024.jpg?auto=webp&format=pjpg&width=640" class="card-img-top" alt="Product Image">
               <div class="card-body">
                   <h5 class="card-title">Laptop</h5>
-                  <p class="card-text">Price: 1500</p>
-                  <p class="card-text">In Stock: 5</p>
-                  <button class="btn btn-primary" onclick="addToCart(3)">Add to Cart</button>
+                  <p class="card-text">Price: $1500</p>
+                  <p class="card-text" id="stock1">In Stock: 5</p>
+                  <button class="btn btn-primary" onclick="addToCart(1)">Add to Cart</button>
               </div>
             </div>
         </div>
@@ -25,10 +26,10 @@
             <div class="card">
                 <img src="https://jblstore.com.ph/cdn/shop/files/JBLTune520BT_Black_1_5000x.png?v=1716434697" class="card-img-top" alt="Product Image">
                 <div class="card-body">
-                    <h5 class="card-title">Heaphones</h5>
-                    <p class="card-text">Price: 100</p>
-                    <p class="card-text">In Stock: 10</p>
-                    <button class="btn btn-primary" onclick="addToCart(3)">Add to Cart</button>
+                    <h5 class="card-title">Headphones</h5>
+                    <p class="card-text">Price: $100</p>
+                    <p class="card-text" id="stock2">In Stock: 10</p>
+                    <button class="btn btn-primary" onclick="addToCart(2)">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -37,8 +38,8 @@
               <img src="https://rbtechngames.com/wp-content/uploads/2023/04/rbtech_steelseries_apexprotkl_1-510x510.webp" class="card-img-top" alt="Product Image">
               <div class="card-body">
                   <h5 class="card-title">Keyboard</h5>
-                  <p class="card-text">Price: 50</p>
-                  <p class="card-text">In Stock: 20</p>
+                  <p class="card-text">Price: $50</p>
+                  <p class="card-text" id="stock3">In Stock: 20</p>
                   <button class="btn btn-primary" onclick="addToCart(3)">Add to Cart</button>
               </div>
           </div>
